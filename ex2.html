@@ -1,55 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monster - Netflix</title>
+    
     <style>
         body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #141414;
-            color: #ffffff;
-            text-align: center;
+            display: flex;
+            flex-direction: row;
+        }
+
+        nav {
+            width: 200px;
+            background-color: #f4f4f4;
+            padding: 10px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .navbar li {
+            margin: 10px 0;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #007BFF;
+        }
+
+        main {
+            flex-grow: 1;
             padding: 20px;
         }
-        .header {
-            background-color: #e50914;
-            padding: 10px 0;
-            font-size: 24px;
-            font-weight: bold;
+    </style>
+    <style>
+        body {
+            background-color: #141414;
+            color: #e5e5e5;
+            font-family: Arial, sans-serif;
         }
-        .content {
-            margin-top: 50px;
+
+        nav {
+            background-color: #181818;
         }
-        .title {
-            font-size: 36px;
-            font-weight: bold;
+
+        .navbar a {
+            color: #e50914;
+        }
+
+        .navbar a:hover {
+            color: #f40612;
+        }
+
+        main {
+            background-color: #181818;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .section {
             margin-bottom: 20px;
         }
-        .description {
-            font-size: 18px;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
+
+        .button-link {
+            display: inline-block;
+            background-color: #e50914;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
         }
-        .footer {
-            margin-top: 50px;
-            font-size: 14px;
-            color: #b3b3b3;
+
+        .button-link:hover {
+            background-color: #f40612;
         }
     </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stranger Things</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header">Netflix</div>
-    <div class="content">
-        <div class="title">Monster</div>
-        <div class="description">
-            Dive into the gripping psychological thriller, <strong>Monster</strong>. Follow the story of Dr. Kenzo Tenma, a brilliant neurosurgeon whose life takes a dark turn after saving the life of a young boy, Johan Liebert. Little does he know, this decision will unravel a chilling mystery that spans across Europe, filled with suspense, moral dilemmas, and the haunting question: What truly makes a monster? 
-            <br><br>
-            Experience the critically acclaimed anime that explores the depths of human nature, morality, and the consequences of our choices. Are you ready to face the monster within?
-        </div>
-    </div>
-    <div class="footer">© 2023 Netflix, Inc.</div>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#cast">Cast</a></li>
+                <li><a href="#website" class="button-link">Official Website</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="overview" class="section">
+            <h1>Stranger Things</h1>
+        <p>The series is created by the Duffer Brothers and has gained a massive fan following worldwide.</p>
+        <p>It combines elements of mystery, thriller, and nostalgia, making it a unique viewing experience.</p>
+        <p>Stranger Things has received critical acclaim for its storytelling, acting, and visual effects.</p>
+        <p>The show has won numerous awards and has been praised for its homage to 1980s pop culture.</p>
+        <p>It continues to be one of Netflix's most popular original series.</p>
+        <p>Season 1 introduces the disappearance of Will Byers and the arrival of Eleven, a girl with psychokinetic abilities.</p>
+        <p>Season 2 explores the aftermath of Will's return and the growing threat of the Mind Flayer.</p>
+        <p>Season 3 focuses on the Starcourt Mall and the battle against the Mind Flayer's physical form.</p>
+        <p>Season 4 delves deeper into the origins of the Upside Down and the mysterious villain, Vecna.</p>
+        <p>The show is known for its iconic soundtrack and references to 1980s movies, games, and culture.</p>
+            <p>Stranger Things is a science fiction horror drama television series set in the 1980s. It follows a group of kids in the small town of Hawkins as they encounter supernatural events, secret government experiments, and a parallel dimension called the Upside Down.</p>
+        </section>
+        <section id="creative-team" class="section">
+            <h2>Creative Team</h2>
+            <ul>
+                <li>The Duffer Brothers - Creators and Showrunners</li>
+                <li>Shawn Levy - Executive Producer and Director</li>
+                <li>Dan Cohen - Executive Producer</li>
+                <li>Iain Paterson - Executive Producer</li>
+                <li>Matt Duffer - Writer</li>
+                <li>Ross Duffer - Writer</li>
+                <li>Michael Stein - Composer</li>
+                <li>Kyle Dixon - Composer</li>
+                <li>Tim Ives - Cinematographer</li>
+                <li>Chris Trujillo - Production Designer</li>
+            </ul>
+        </section>
+
+        <section id="crew" class="section">
+            <h2>Crew</h2>
+            <ul>
+                <li>Kim Wilcox - Costume Designer</li>
+                <li>Joshua Reyes - Visual Effects Supervisor</li>
+                <li>Mark Paterson - Sound Mixer</li>
+                <li>David Klotz - Music Editor</li>
+                <li>Kelly McCormick - Stunt Coordinator</li>
+                <li>Paula Fairfield - Sound Designer</li>
+                <li>Sarah Hindsgaul - Hair Department Head</li>
+                <li>Sean Brennan - Art Director</li>
+                <li>Chris Gerding - Set Decorator</li>
+                <li>Holly Wheeler - Makeup Artist</li>
+            </ul>
+        </section>
+
+        <section id="cast" class="section">
+            <h2>Key Cast</h2>
+            <ul>
+                <li>Winona Ryder as Joyce Byers</li>
+                <li>David Harbour as Jim Hopper</li>
+                <li>Millie Bobby Brown as Eleven</li>
+                <li>Finn Wolfhard as Mike Wheeler</li>
+                <li>Gaten Matarazzo as Dustin Henderson</li>
+                <li>Caleb McLaughlin as Lucas Sinclair</li>
+                <li>Sadie Sink as Max Mayfield</li>
+            </ul>
+        </section>
+
+        <section id="website" class="section">
+            <h2>Learn More</h2>
+            <a href="https://www.netflix.com/strangerthings" target="_blank" class="button-link">Visit Official Website</a>
+        </section>
+    </main>
 </body>
-</html></html>
+</html>
